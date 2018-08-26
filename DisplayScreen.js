@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, FlatList, StyleSheet } from 'react-native';
 import firebase from './Firebase';
 
 const rootRef = firebase.database().ref();
@@ -23,6 +23,7 @@ export default class DisplayScreen extends Component {
         return (
             <View>
                 <Text>Welcome to homescreen</Text>
+
             </View>
         );
     }
