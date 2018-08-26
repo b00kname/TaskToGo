@@ -1,17 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import firebase from '@firebase/app'
-import '@firebase/database'
-
-var config = {
-    apiKey: "AIzaSyDG4GzUOBrpt9dr3VdiUZSpr5TY9dzm7N4",
-    authDomain: "tasktogoo.firebaseapp.com",
-    databaseURL: "https://tasktogoo.firebaseio.com",
-    projectId: "tasktogoo",
-    storageBucket: "tasktogoo.appspot.com",
-    messagingSenderId: "682989888050"
-};
-firebase.initializeApp(config);
+import firebase from './Firebase';
 
 const rootRef = firebase.database().ref();
 const taskRef = rootRef.child('tasks');
